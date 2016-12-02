@@ -32,6 +32,19 @@ namespace Expenses
 
             }
             return money;
+
+        }
+        public static void displayIncomes()
+        {
+            using (StreamReader sr = new StreamReader("incomes.txt"))
+            {
+                string line;
+
+                while ((line = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(line);
+                }
+            }
         }
     }
 }

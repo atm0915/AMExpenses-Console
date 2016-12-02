@@ -50,8 +50,21 @@ namespace Expenses
             }
 
 
+
             return money;
 
+        }
+        public static void displayPayments()
+        {
+            using (StreamReader sr = new StreamReader("payments.txt"))
+            {
+                string line;
+
+                while ((line = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(line);
+                }
+            }
         }
 
     }

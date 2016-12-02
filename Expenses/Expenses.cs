@@ -117,15 +117,21 @@ namespace Expenses
                 int option = int.Parse(Console.ReadLine());
                 if (option == 1)
                 {
-                    Process.Start("payments.txt");
+                    Payment.displayPayments();
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadLine();
                 }
                 else if (option == 2)
                 {
-                    Process.Start("credits.txt");
+                    Credit.displayCredits();
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadLine();
                 }
                 else if (option == 3)
                 {
-                    Process.Start("incomes.txt");
+                    Income.displayIncomes();
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadLine();
                 }
                 else if (option == 4)
                 {
